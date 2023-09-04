@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, ul, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 1140px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 80px;
+}
+.container header h1 span {
+  color: #774936;
+  font-size: 24px;
+}
+.container main {
+  margin-top: 30px;
+}
+.container main section {
+  margin-bottom: 60px;
+}
+.container main .skill-header {
+  display: flex;
+  align-items: end;
+  margin-bottom: 50px;
+}
+.container main .skill-header h1 {
+  margin-right: 20px;
+}
+.container main .skill-header p {
+  font-weight: 500;
+}
+.container main .skill-header p span {
+  padding: 1px 6px 2px 4px;
+  font-size: 13px;
+}
+.container main .skill-ul li {
+  list-style: disc;
+}
+.container main .skill-ul li p {
+  width: fit-content;
+  padding: 1px 6px 2px 4px;
+}
+.container main .familiar {
+  color: white;
+  background-color: #b68a75;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=style.css.map */

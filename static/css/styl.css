@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, ul {
+    margin: 0;
+}
+h1 {
+    font-size: 32px;
+}
+li {
+    list-style: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+}
+main {
+    margin-top: 30px;
+}
+section {
+    margin-bottom: 60px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 1140px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.primary {
+    color: #774936;
+}
+.primary- {
+    color: #8a5a44;
+}
+.skill-ul > li {
+    list-style: circle;
+}
+.familiar {
+
+}
