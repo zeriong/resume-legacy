@@ -4,83 +4,113 @@
     <meta charset="UTF-8">
     <title>Resume: ZERIONG</title>
 
-    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
-    <meta property="og:title" content="Resume: ZERIONG" />
-    <meta property="og:description" content="집요한 프론트엔드 개발자 전제룡입니다." />
-    <meta property="og:image" content="" />
-
-    <link rel="stylesheet" href="static/css/style.css" >
-    <link rel="stylesheet" href="static/css/z-grid.css">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+    <meta property="og:title" content="Resume: ZERIONG">
+    <meta property="og:description" content="집요한 프론트엔드 개발자 전제룡입니다.">
+    <meta property="og:image" content="">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { "primary": "#0a6eef" } } }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            html {
+                font-family: 'Noto Sans KR', sans-serif;
+                color: #222222;
+            }
+        }
+    </style>
 </head>
-<body>
-<div class="container">
-    <header>
-        <h1> zeriong: <span>집요한 오답노트 개발자</span> </h1>
-        <div>
-            <div style="display: flex; justify-content: end;">
-                <div>깃허브</div>
-                <div>블로그</div>
-            </div>
-            <div>Email. jaeryong95@gmail.com</div>
+<body class="relative transform w-full h-full max-w-[770px] m-auto pt-[30px]">
+<header class="flex justify-between w-full">
+    <p class="flex font-bold">
+        ZERIONG.RESUME
+    </p>
+    <div>
+        <div class="flex gap-[12px] whitespace-nowrap">
+            <div>깃헙</div>
+            <div>블로그</div>
+            <div>이멜</div>
         </div>
-    </header>
-    <main>
-        <section style="display: flex; height: 320px;">
-            <div style="background-color: skyblue; width: 260px;">
-                내얼굴
+    </div>
+</header>
+<main class="mt-[60px] grid gap-[60px]">
+    <!-- 소개 section -->
+    <section class="grid gap-[60px]">
+        <h1 class="font-bold text-[70px]">
+            안녕하세요,<br/>
+            <span class="text-primary">끝까지 완주하는 개발자</span><br/>
+            전제룡입니다.
+        </h1>
+        <div class="flex h-[320px]">
+            <img src="./static/image/profile.jpg" alt="profile" class="h-full"/>
+            <ul class="grid place-content-between h-full pl-[40px] my-auto overflow-hidden list-disc text-[22px] font-medium">
+                <li>
+                    독학으로 웹 서비스 개발부터 배포까지 경험해본 <br/>
+                    프론트엔드 개발자입니다.
+                </li>
+                <li>
+                    왜 끝까지 완주하는 개발자냐? 프론트엔드 개발자이지만 힘들어도 끝까지 했으니까
+                </li>
+                <li>
+                    가능하면 3~4줄로 끝내야 함
+                </li>
+                <li>
+                    협업을 할 때 어떤 노력을 할 수 있는지도 적자
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 프로젝트 section -->
+    <section>
+        <h1 class="text-[40px] font-bold text-primary border-b-2 border-b-gray-200">
+            Project
+        </h1>
+        <div>
+            <h2>ZETE</h2>
+            <div>
+                두가지 버전을 넣고 첫번째 버전에선 어떻게 개선해 나아갔으며 두번째 버전에서 어떻게 개선되었는지 등 <br/>
+                어떤 문제를 겪었고 어떤 기술의 장점을 활용했는지 등등
             </div>
-            <div style="flex-grow: 1; display: flex; flex-direction: column; height:100%; padding: 15px 40px; background-color: bisque; overflow: hidden;">
-                <h1>저를 소개합니다!</h1>
-                <div style="width:100%; height:100%; padding-top:10px; padding-bottom: 10px; overflow: hidden">
-                    <div>
-                        틀린 문제를 기록하는 "오답노트" 개발자 전제룡입니다. <br/>
-                        오답노트란 틀린 문제를 적고 반드시 틀리지 않기 위해 작성합니다.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="skill-header">
-                <h1 style="margin-right: 20px;">사용해본 기술</h1>
-                <p>
-                    친숙한 기술: &nbsp;
-                    <span class="familiar"> Skill </span>
+        </div>
+    </section>
+
+    <!-- 스킬 section -->
+    <section class="grid gap-[60px]">
+        <h1 class="text-[40px] font-bold text-primary border-b-2 border-b-gray-200">
+            Skills
+        </h1>
+        <div class="grid gap-[60px]">
+            <div>
+                <p class="text-[30px] font-bold">
+                    React.js
                 </p>
-            </div>
-            <div style="display: flex;">
-                <h2>Front-end</h2>
-                <ul class="skill-ul">
+                <ul class="pl-[24px] list-disc mt-[12px]">
                     <li>
-                        <p class="familiar">
-                            React.js
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Next.js
-                        </p>
-                    </li>
-                    <li>
-                        익숙한 주요스킬은 색 다르게
+                        sdfsdf
                     </li>
                 </ul>
             </div>
-        </section>
-        <section>
-            <h1>프로젝트</h1>
             <div>
-                <h2>ZETE</h2>
-                <div>
-                    두가지 버전을 넣고 첫번째 버전에선 어떻게 개선해 나아갔으며 두번째 버전에서 어떻게 개선되었는지 등 <br/>
-                    어떤 문제를 겪었고 어떤 기술의 장점을 활용했는지 등등
-                </div>
+                <p class="text-[30px] font-bold">
+                    Next.js
+                </p>
+                <ul class="pl-[24px] list-disc mt-[12px]">
+                    <li>
+                        sdfsdf
+                    </li>
+                </ul>
             </div>
-        </section>
-    </main>
-</div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
