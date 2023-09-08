@@ -35,15 +35,15 @@
     </p>
     <div>
         <div class="flex gap-[12px] whitespace-nowrap">
+            <p class="font-bold">jaeryong95@gmail.com</p>
             <div>깃헙</div>
             <div>블로그</div>
-            <div>이멜</div>
         </div>
     </div>
 </header>
-<main class="mt-[60px] grid gap-[60px]">
+<main class="mt-[80px] grid gap-[80px]">
     <!-- 소개 section -->
-    <section class="grid gap-[60px]">
+    <section class="grid gap-[80px] mb-[40px]">
         <h1 class="font-bold text-[70px]">
             안녕하세요,<br/>
             <span class="text-primary">끝까지 완주하는 개발자</span><br/>
@@ -71,24 +71,138 @@
 
     <!-- 프로젝트 section -->
     <section>
-        <h1 class="text-[40px] font-bold text-primary border-b-2 border-b-gray-200">
-            Project
+        <h1 class="text-[48px] font-bold text-primary border-b-2 border-b-gray-200">
+            프로젝트
         </h1>
-        <div>
-            <h2>ZETE</h2>
+        <div class="w-full flex mt-[80px]">
+            <div class="grid gap-[12px] min-w-[270px] h-fit pr-[16px]">
+                <h1 class="text-[32px] font-bold">
+                    ZETE<br/>
+                    메모 서비스
+                </h1>
+
+<!--                <div>-->
+<!--                    <p class="text-[18px] font-semibold">-->
+<!--                        Zustand & ReactQuery<br/>-->
+<!--                        Deploy ver.-->
+<!--                    </p>-->
+<!--                    <p class="text-[18px]">2023.08.20 ~ 2023.09.05</p>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <p class="text-[18px] font-semibold">-->
+<!--                        Redux Toolkit<br/>-->
+<!--                        Original ver.-->
+<!--                    </p>-->
+<!--                    <p class="text-[18px]">2023.03.31 ~ 2023.08.20</p>-->
+<!--                </div>-->
+
+                <p class="text-[18px]">2023.03.31 ~ 2023.09.05</p>
+            </div>
             <div>
-                두가지 버전을 넣고 첫번째 버전에선 어떻게 개선해 나아갔으며 두번째 버전에서 어떻게 개선되었는지 등 <br/>
-                어떤 문제를 겪었고 어떤 기술의 장점을 활용했는지 등등
+                <!-- zete zustand reactQuery -->
+                <div class="grid gap-[12px] border-b-2 border-gray-200 pb-[80px] mb-[80px]">
+                    <h2 class="text-[32px] font-bold">
+                        Zustand와 ReactQuery를 사용한<br/>
+                        배포 버전
+                    </h2>
+
+                    <p class="text-[18px]">2023.08.20 ~ 2023.09.05</p>
+
+                    <a href="https://github.com/zeriong/zete-zustand-reactQuery" target="_blank" class="text-[24px] font-extrabold text-primary">
+                        ZETE 배포 버전 바로가기
+                    </a>
+
+                    <p class="text-[24px] font-bold">프로젝트 설명</p>
+                    <ul class="list-disc pl-[24px]">
+                        <li>
+                            저장버튼을 누르지 않아도 작성과 동시에 메모가 저장되는 안전한 메모서비스입니다.
+                        </li>
+                        <li>메모를 카테고리와 태그를 통하여 분류, 관리할 수 있습니다.</li>
+                        <li>
+                            AI(Chat GPT)를 통해 검색한 정보를 간추려 메모에 즉시 반영할 수 있습니다.
+                        </li>
+                    </ul>
+
+                    <!--
+                    <p class="text-[24px] font-bold">서비스 주요 기능</p>
+                    <ul class="list-disc pl-[24px]">
+                        <li>카테고리 생성, 수정, 삭제</li>
+                        <li>메모 추가, 수정, 삭제, 검색 <br/>(작성 시 자동적으로 저장되어 별도의 저장버튼 불필요)</li>
+                        <li>카테고리 생성, 수정, 삭제 <br/>(생성된 태그는 카테고리 하위 내비게이션에 노출)</li>
+                    </ul>
+                    -->
+
+                    <p class="text-[24px] font-bold">사용된 기술</p>
+                    <ul class="grid gap-[12px] list-disc pl-[24px]">
+                        <li class="text-[18px] font-bold">Frontend</li>
+                        <p>React.js, TypeScript, ReactQuery, Zustand, Openapi Generator, Tailwindcss</p>
+                    </ul>
+                    <ul class="grid gap-[12px] list-disc pl-[24px]">
+                        <li class="text-[18px] font-bold">Backend</li>
+                        <p>Nest.js, MariaDB, TypeORM, Swagger, JWT Token</p>
+                    </ul>
+                    <ul class="grid gap-[12px] list-disc pl-[24px]">
+                        <li class="text-[18px] font-bold">Deploy</li>
+                        <p>Ubuntu Linux, PM2</p>
+                    </ul>
+
+                    <h1 class="text-[24px] font-bold">프로젝트 소감</h1>
+                    reactQuery와 zustand로 컨버팅할 때 zete Original버전에서 openapi codegenerator를 통해 만들어 둔 자동화시스템 덕분에 컨버팅을 더 효율적으로 진행할 수 있었으며
+                    코드복잡도가 낮아져 코드 가독성이 좋아지고 언제든 데이터캐싱의 이점을 사용한 확장이 가능하도록 설계할 수 있었습니다.
+                    <br/><br/>
+                    또한 리눅스환경에서 서비스를 배포할 때도 PM2를 사용하여 실행관리의 번거로움을 해결하는 등 개발자는 DevOps를 실천하려 노력하는 것이 더 나은 개발자가 되기 위한 노력임을 느꼈습니다.
+                    <br/><br/>
+                    하나의 서비스를 직접 배포까지 한 경험을 통해 앞으로 함께 서비스를 만들어갈 팀원들과 배려하는 마음으로 건강한 커뮤니케이션에 기여할 수 있음을 믿어 의심치 않습니다.
+
+                </div>
+                <div class="grid gap-[12px] border-b-2 border-gray-200 pb-[80px] mb-[80px]">
+                    <h2 class="text-[32px] font-bold">
+                        Zustand와 ReactQuery를 사용한<br/>
+                        배포 버전
+                    </h2>
+                    <p class="text-[18px]">2023.08.20 ~ 2023.09.05</p>
+                    <p class="text-[24px] font-bold">프로젝트 설명</p>
+                    <ul class="list-disc pl-[24px]">
+                        <li>
+                            저장버튼을 누르지 않아도 작성과 동시에 메모가 저장되는 안전한 메모서비스입니다.
+                        </li>
+                        <li>메모를 카테고리와 태그를 통하여 분류, 관리할 수 있습니다.</li>
+                        <li>
+                            AI(Chat GPT)를 통해 검색한 정보를 간추려 메모에 즉시 반영할 수 있습니다.
+                        </li>
+                    </ul>
+                    <p class="text-[24px] font-bold">서비스 주요 기능</p>
+                    <ul class="list-disc pl-[24px]">
+                        <li>카테고리 생성, 수정, 삭제</li>
+                        <li>메모 추가, 수정, 삭제, 검색 <br/>(작성 시 자동적으로 저장되어 별도의 저장버튼 불필요)</li>
+                        <li>카테고리 생성, 수정, 삭제 <br/>(생성된 태그는 카테고리 하위 내비게이션에 노출)</li>
+                    </ul>
+                    <!--
+                    <p class="text-[24px] font-bold">사용된 기술</p>
+                    <ul class="grid gap-[12px] list-disc pl-[24px]">
+                        <li class="text-[18px] font-bold">Frontend</li>
+                        <p>React.js, TypeScript, ReactQuery, Zustand, Openapi Generator, Tailwindcss</p>
+                    </ul>
+                    <ul class="grid gap-[12px] list-disc pl-[24px]">
+                        <li class="text-[18px] font-bold">Backend</li>
+                        <p>Nest.js, MariaDB, TypeORM, Swagger, JWT Token</p>
+                    </ul>
+                    <ul class="grid gap-[12px] list-disc pl-[24px]">
+                        <li class="text-[18px] font-bold">Deploy</li>
+                        <p>Ubuntu Linux, PM2</p>
+                    </ul>
+                    -->
+                </div>
             </div>
         </div>
     </section>
 
     <!-- 스킬 section -->
-    <section class="grid gap-[60px]">
-        <h1 class="text-[40px] font-bold text-primary border-b-2 border-b-gray-200">
-            Skills
+    <section class="grid gap-[80px]">
+        <h1 class="text-[48px] font-bold text-primary border-b-2 border-b-gray-200">
+            기술
         </h1>
-        <div class="grid gap-[60px]">
+        <div class="grid gap-[80px]">
             <div>
                 <p class="text-[30px] font-bold">
                     React.js
